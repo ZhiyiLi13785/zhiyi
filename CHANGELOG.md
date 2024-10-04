@@ -4,7 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
-the following form: YYYY.0M.0D.
+the following form: 2024.10.3
+
+## [2024.10.3]
+
+### Added
+
+- Added "textCharacter" component under the src
+
+### Updated
+
+- build a new component named"textCharacter", with one main method and four basic method
+- four basic method build, which is "add","reduce","empty","size"
 
 ## [Unreleased]
 
