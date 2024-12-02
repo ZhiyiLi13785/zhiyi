@@ -6,6 +6,40 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: 2024.10.3
 
+
+## [2024.11.29]
+
+### Added
+
+- Designed kernel implementation for TextCharacter component
+
+### Updated
+
+- Changed design to include some specific code to achieve the method from TextCharacterKernal
+
+## [2024.11.28]
+
+### Added
+
+- Designed abstract class for TextCharacter component
+
+### Updated
+ the things change most I think is I change the code for TextCharacter, at first I write the specific code about how they achieve,but now I know the TextCharacter may just need for what method is. Then I put the specific about how code achieve in TextCharacterSecondary.(the answer for the three points)
+
+## [2024.11.27]
+
+### Added
+
+- Designed kernel and enhanced interfaces for TextCharacter component
+
+### Updated
+
+- add the TextCharacter
+- add the TextCharacterKernal
+- acknowledge the growth and development of your work：I begin to find I need to change or delete some of methods from my brainStorm, the reason is
+they are not suitable for the specific condition.
+
+
 ## [2024.10.3]
 
 ### Added
