@@ -1,24 +1,27 @@
 package components.TextCharacter;
 
+/**
+ * finish the method in TextCharacter.
+ */
 public abstract class TextCharacterSecondary implements TextCharacter {
 
-    @Override
-    public abstract int size();
-
-    protected abstract void setFromString(String text);
-
-    private String DEFAULT_LEGAL_CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,!()";
+    private String DEFAULT_LEGAL_CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXVZabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,!()#";
 
     @Override
     public boolean contains(char k) {
-        boolean decide = false;
-        for (int i = 0; i < this.DEFAULT_LEGAL_CHARACTERS.length(); i++) {
+        // Check if the character is legal first
+        if (this.DEFAULT_LEGAL_CHARACTERS.indexOf(k) == -1) {
+            return false; // k is not a legal character, so it cannot be in legalCharacter
+        }
+
+        // Check if the character exists in the current text
+        for (int i = 0; i < this.size(); i++) {
             if (this.charAt(i) == k) {
-                decide = true;
+                return true;
             }
         }
-        return decide;
-    };
+        return false;
+    }
 
     @Override
     public boolean contains(String k) {
@@ -54,14 +57,6 @@ public abstract class TextCharacterSecondary implements TextCharacter {
         }
         this.setFromString(updatedText.toString());
     };
-
-    @Override
-    public char charAt(int n1) {
-        if (n1 < 0 || n1 >= this.size()) {
-            throw new IndexOutOfBoundsException("Index out of bounds: " + n1);
-        }
-        return this.toString().charAt(n1); // Assuming toString gives the correct sequence
-    }
 
     @Override
     public String toString() {

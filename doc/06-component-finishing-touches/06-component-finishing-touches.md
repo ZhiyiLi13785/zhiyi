@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Zhiyi Li
+- **Dot Number**: li.13785
+- **Due Date**: 12/4 4:10
 
 ## Assignment Overview
 
@@ -50,7 +50,6 @@ course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -132,7 +131,7 @@ to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
 
-<!-- TODO: make a new branch from main then delete this comment -->
+
 
 ## Assignment Tasks
 
@@ -298,18 +297,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+I think this helped me a lot, and one of the big reasons is that through this whole project, I started to get a basic understanding of how to structure my component. I always felt that the content of the course was too scattered, and the specific performance was always one piece. It's like a TextCharacter and a TextCharacterSecondary. But I don't know how to relate them. This big project has given me a deep understanding of the whole component.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+One of the problems I've found is that I may know certain methods, but I can't use them properly. In other words, when asked to complete an entire large project, it's easy for me to get lost. I'm probably better at writing the outline and let me fill in the details. I also found that when I was asked to think about something, I was always uninspired, such as brainStrom, which made me very upset. Obviously, these are things that I really need to learn. My solution is to go to office hours to ask teachers for advice more often. I am very grateful to my professor, who is very patient and provides me with a lot of help, and also gives me a basic idea of how to build a big job.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+I have a deeper interest in software development, in my experiments again and again, I found that writing a software is really very happy. I can get a great sense of accomplishment here.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -317,29 +316,28 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+I think through the completion of this whole project, the most significant thing is that I have mastered the ability to write an entire component, which is the biggest impact on me. Secondly, in this process, I also have a deeper understanding of implement and extend. It is different from the past just memorizing knowledge points. Now I can do it myself. There is a new knowledge point that I think is Standard, and I am really exposed to them for the first time.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+I think I can definitely put this experience on my resume, I passed a lot of hard work, in one semester, completed a big project. Although this project was a big challenge for me, I was lucky enough to finish it. I'll put it on my resume to prove that I know something about programming, something like this: I've mastered the ability to write component, which is the result of my experiments.、
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+This project made me start to consider whether my future employment should involve software development. In fact, through this project, I have a greater interest in writing software, and I also have the idea to further study in software development. I am very satisfied with the component I chose, and I also thank the teacher for providing us with this project, which enables me to have a deeper understanding of my interest.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I can brush more questions and study more to learn other algorithms. I will also actively contact my mentor, I am sure I can get a lot of help and useful advice from him, he is really a very good person. I was lucky to meet him
 
 ### Changelog
 
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -375,7 +373,7 @@ request merge (or at least tag your commits). This is not required.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
+
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -427,7 +425,7 @@ If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
 
-<!-- TODO: follow the link to share your feedback then delete this comment -->
+
 
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9

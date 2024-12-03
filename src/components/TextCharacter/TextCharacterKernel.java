@@ -46,4 +46,28 @@ public interface TextCharacterKernel extends Standard<TextCharacter> {
      */
     void reduce();
 
+    /**
+     * Returns the character at the specified position in this text character
+     * component.
+     *
+     * @param n1
+     *            the position of the character to return (0-based index)
+     * @return the character at the specified position {@code n1}
+     * @requires 0 <= n1 < this.size()
+     * @ensures charAt = character at index {@code n1} of this
+     */
+    char charAt(int n1);
+
+    /**
+     * Sets the internal representation of this text character component from
+     * the given string.
+     *
+     * @param text
+     *            the string to set as the internal representation
+     * @requires text is not null and only contains valid characters for this
+     *           component (e.g., letters, punctuation, etc.)
+     * @ensures this.legalCharacter = text
+     */
+    void setFromString(String text);
+
 }

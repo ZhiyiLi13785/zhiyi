@@ -26,7 +26,7 @@ public class TextCharacter1L extends TextCharacterSecondary {
 
     // TODO: implement only kernel methods
 
-    private String DEFAULT_LEGAL_CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,!()";
+    private String DEFAULT_LEGAL_CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXVZabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,!()#";
 
     private String legalCharacter;
 
@@ -60,9 +60,19 @@ public class TextCharacter1L extends TextCharacterSecondary {
 
     @Override
     public void add(char k) {
-        if (this.isTextCharacter(k) && this.legalCharacter.indexOf(k) == -1) {
+        if (this.isTextCharacter(k)) {
             this.legalCharacter += k;
         }
+    }
+
+    @Override
+    public char charAt(int n1) {
+        if (n1 < 0 || n1 >= this.size()) {
+            throw new IndexOutOfBoundsException(
+                    n1 + " is out of range of 0 and " + (this.size() - 1));
+        }
+        // Access the character at the specified index directly from legalCharacter
+        return this.legalCharacter.charAt(n1);
     }
 
     @Override
@@ -76,10 +86,12 @@ public class TextCharacter1L extends TextCharacterSecondary {
 
     @Override
     public void reduce() {
-        if (this.legalCharacter.isEmpty()) {
+        if (!this.legalCharacter.isEmpty()) {
+            // Remove the last character from the string
             this.legalCharacter = this.legalCharacter.substring(0,
                     this.legalCharacter.length() - 1);
-
+        } else {
+            throw new IllegalStateException("Cannot reduce an empty text.");
         }
     }
 
@@ -105,7 +117,7 @@ public class TextCharacter1L extends TextCharacterSecondary {
     }
 
     @Override
-    protected void setFromString(String text) {
+    public void setFromString(String text) {
         this.legalCharacter = text;
     }
 
