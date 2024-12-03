@@ -4,7 +4,22 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
-the following form: 2024.10.3
+the following form: 2024.12.4
+
+
+## [2024.12.03]
+
+### Added
+
+- Designed test suite for TextCharacter component
+- Designed two different use cases for TextCharacter component
+- Designed two tests for TextCharacter component method from TextCharacter and TextCharacterkernal
+
+### Updated
+
+- I finish my compoent TextCharacter finally, I am so lucky to solve this big work. I add two tests for
+methods and ass two sample cases to let other users understand my thinking. I am sure I will still add
+some details during this winter break.
 
 
 ## [2024.11.29]
