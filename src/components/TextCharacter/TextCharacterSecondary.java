@@ -78,6 +78,10 @@ public abstract class TextCharacterSecondary implements TextCharacter {
             return true;
         }
 
+        // Check if obj is null or not an instance of TextCharacter
+        if (obj == null || !(obj instanceof TextCharacter)) {
+            return false;
+        }
         TextCharacter other = (TextCharacter) obj;
 
         if (this.size() != other.size()) {

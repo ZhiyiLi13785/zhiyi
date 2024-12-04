@@ -30,6 +30,10 @@ public class TextCharacter1L extends TextCharacterSecondary {
 
     private String legalCharacter;
 
+    private void createNewRep() {
+        this.legalCharacter = "";
+    }
+
     public TextCharacter1L() {
         //initialize
         this.legalCharacter = "";
@@ -37,11 +41,18 @@ public class TextCharacter1L extends TextCharacterSecondary {
 
     @Override
     public TextCharacter newInstance() {
-        return new TextCharacter1L();
+        try {
+            // Use reflection to create a new instance of the current class
+            return this.getClass().getConstructor().newInstance();
+        } catch (ReflectiveOperationException e) {
+            // Throw an assertion error if instantiation fails
+            throw new AssertionError(
+                    "Cannot construct object of type " + this.getClass(), e);
+        }
     }
 
     /**
-     * No argument constructor--private to prevent instantiation.
+     * Initializes an empty legalCharacter string.
      */
     public TextCharacter1L(String legalCharacter) {
         //initialize
@@ -103,8 +114,7 @@ public class TextCharacter1L extends TextCharacterSecondary {
 
     @Override
     public void clear() {
-        this.legalCharacter = "";
-
+        this.createNewRep();
     }
 
     @Override
