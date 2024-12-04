@@ -1,8 +1,13 @@
 package components.TextCharacter;
 
+/**
+ * Interface for a text character component that allows advanced text
+ * manipulation and character management.
+ *
+ * Provides methods to check for characters or substrings, and to remove
+ * specific characters from the text.
+ */
 public interface TextCharacter extends TextCharacterKernel {
-
-    // TODO: contracts only
 
     /**
      * Checks if this text character component contains the specified string.
@@ -39,15 +44,4 @@ public interface TextCharacter extends TextCharacterKernel {
      */
     void reduceCharacter(char k);
 
-    /**
-     * Returns the character at the specified position in this text character
-     * component.
-     *
-     * @param n1
-     *            the position of the character to return (0-based index)
-     * @return the character at the specified position {@code n1}
-     * @requires 0 <= n1 < this.size()
-     * @ensures charAt = character at index {@code n1} of this
-     */
-    char charAt(int n1);
 }
